@@ -445,9 +445,8 @@ header img {
 
 @media screen and (max-width: 480px) {
   #elvis h2, #schlager h2, #seemann h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 2rem;
-    padding: 1rem 1rem;
   }
 }
 
