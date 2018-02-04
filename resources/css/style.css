@@ -2,13 +2,14 @@
 html {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   font-size: 18px;
-  background-color: #f7f7f7;
 }
 
 body {
   line-height: 1.4;
   background-color: #f7f7f7;
   text-align: center;
+  height: 100%;
+  z-index: 1;
 }
 
 h1 {
@@ -345,10 +346,25 @@ header img {
   color: white;
 }
 
-/*
+.background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  height:100%;
+  overflow: scroll;
+  background-image: url("../images/bg_3.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main1 {
   height: 50rem;
-  background: url("../images/bg_1.jpg");
+  background-image: url("../images/bg_1.jpg");
   margin-top: 0rem;
   background-attachment: fixed;
   background-position: top;
@@ -359,7 +375,7 @@ header img {
 .main2 {
   margin-top: 0rem;
   height: 30rem;
-  background: url("../images/bg_2.jpg");
+  background-image: url("../images/bg_2.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -369,7 +385,7 @@ header img {
 .main3 {
   margin-top: 0rem;
   height: 30rem;
-  background: url("../images/bg_3.jpg");
+  background-image: url("../images/bg_3.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -377,7 +393,7 @@ header img {
 }
 
 @media screen and (max-width: 780px) {
-  .main {
+  .main1 {
     background-attachment: initial;
   }
 }
@@ -393,55 +409,6 @@ header img {
     background-attachment: initial;
   }
 }
-*/
-
-.main1 {
-  height: 50rem;
-  background: url("../images/bg_1.jpg");
-  margin-top: 0rem;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.mainouter {
-    position:relative;
-    width:100%;
-  }
-
-.main2 {
-  margin-top: 0rem;
-  height: 30rem;
-  background: url("../images/bg_2.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main3 {
-  margin-top: 0rem;
-  height: 30rem;
-  background: url("../images/bg_3.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 780px) {
-  .main {
-    background-attachment: initial;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .main3 {
-    background-attachment: initial;
-  }
-}
-
 
 /* artists */
 .contentflex {
