@@ -9,7 +9,6 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   height: 100%;
-  z-index: 1;
 }
 
 h1 {
@@ -344,22 +343,6 @@ header img {
 .intro span {
   font-size: 1.25rem;
   color: white;
-}
-
-.background {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -1;
-  height:100%;
-  overflow: scroll;
-  background-image: url("../images/bg_3.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main1 {
