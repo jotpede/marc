@@ -360,7 +360,7 @@ header img {
   height: 30rem;
   background: url("../images/bg_2.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -370,10 +370,29 @@ header img {
   height: 30rem;
   background: url("../images/bg_3.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 780px) {
+  .main {
+    background-attachment: initial;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main2 {
+    background-attachment: initial;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main3 {
+    background-attachment: initial;
+  }
+}
+
 
 
 /* artists */
@@ -534,6 +553,12 @@ header img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 780px) {
+  .gigs{
+    background-attachment: initial;
+  }
 }
 
 
