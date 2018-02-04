@@ -346,14 +346,19 @@ header img {
 }
 
 .main {
-  margin-top: 0rem;
   height: 50rem;
   background: url("../images/bg_1.jpg");
+  margin-top: 0rem;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mainouter {
+    position:relative;
+    width:100%;
+  }
 
 .main2 {
   margin-top: 0rem;
@@ -394,7 +399,6 @@ header img {
 }
 
 
-
 /* artists */
 .contentflex {
   display: flex;
@@ -408,6 +412,13 @@ header img {
   background-color: white;
   border: 2px dashed #111;
   outline: 8px solid white;
+  z-index: 2;
+}
+
+@media screen and (max-width: 780px) {
+  .content {
+    width:90%;
+  }
 }
 
 .content p {
@@ -418,13 +429,6 @@ header img {
   .content p {
     padding: 1rem 2rem;  }
 }
-
-@media screen and (max-width: 480px) {
-  .content p {
-    padding: 1rem 2rem;
-  }
-}
-
 
 #elvis h2, #schlager h2, #seemann h2 {
   font-size: 6rem;
@@ -440,13 +444,14 @@ header img {
 @media screen and (max-width: 780px) {
   #elvis h2, #schlager h2, #seemann h2 {
     font-size: 5rem;
+    line-height: 1.2;
+
   }
 }
 
 @media screen and (max-width: 480px) {
   #elvis h2, #schlager h2, #seemann h2 {
     font-size: 3rem;
-    margin-top: 2rem;
   }
 }
 
@@ -481,7 +486,7 @@ header img {
 
 @media screen and (max-width: 480px) {
   .hero img {
-      right: 10px;
+      right: 20px;
       margin: 6rem 0 0 0;
       z-index: 1;
       height: 12rem;
@@ -647,6 +652,9 @@ header img {
 @media screen and (max-width: 480px) {
   .contactcontent h4 {
     font-size: 4rem;
+    margin-left: 0rem;
+    text-align: center;
+
   }
 }
 
