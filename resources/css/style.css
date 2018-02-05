@@ -375,22 +375,22 @@ header img {
   background-size: cover;
 }
 
-@media screen and (max-width: 780px) {
-  .main1 {
-    background-attachment: initial;
-  }
+.bg_image {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  position: fixed;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
 }
 
-@media screen and (max-width: 780px) {
-  .main2 {
-    background-attachment: initial;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .main3 {
-    background-attachment: initial;
-  }
+.bg_1_image {
+  background-image: url("../images/bg_1.jpg");
 }
 
 /* artists */
