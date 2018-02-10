@@ -78,7 +78,6 @@ h3 {
   }
 }
 
-
 /* navi */
 a:hover, a:active {
   outline: 0;
@@ -409,6 +408,11 @@ header img {
   z-index: 2;
 }
 
+.imprint {
+  margin-top: 3rem;
+  padding: 0 4rem;
+}
+
 @media screen and (max-width: 780px) {
   .content {
     width:90%;
@@ -424,7 +428,7 @@ header img {
     padding: 1rem 2rem;  }
 }
 
-#elvis h2, #schlager h2, #seemann h2 {
+#elvis h2, #schlager h2, #seemann h2, #imprint h2 {
   font-size: 6rem;
   line-height: 1.4;
   font-weight: bold;
@@ -432,11 +436,10 @@ header img {
   text-align: center;
   font-family: 'Lobster', cursive;
   margin-top: 2rem;
-
 }
 
 @media screen and (max-width: 780px) {
-  #elvis h2, #schlager h2, #seemann h2 {
+  #elvis h2, #schlager h2, #seemann h2, #imprint h2 {
     font-size: 5rem;
     line-height: 1.2;
 
@@ -444,7 +447,7 @@ header img {
 }
 
 @media screen and (max-width: 480px) {
-  #elvis h2, #schlager h2, #seemann h2 {
+  #elvis h2, #schlager h2, #seemann h2, #imprint h2 {
     font-size: 3rem;
   }
 }
