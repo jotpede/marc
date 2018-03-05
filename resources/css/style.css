@@ -47,7 +47,7 @@ h2 {
   font-family: 'Lobster', cursive;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   h2 {
     font-size: 1.5rem;
   }
@@ -66,13 +66,15 @@ h3 {
 
 @media screen and (max-width: 768px) {
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-bottom: 4px solid white;
 
   }
@@ -325,18 +327,69 @@ header img {
   content: "\2716"; /* Close icon */
 }
 
+/* slider */
+
+@keyframes slidy {
+0% { left: 0%; }
+27% { left: 0%; }
+33% { left: -100%; }
+60% { left: -100%; }
+66% { left: -200%; }
+93% { left: -200%; }
+100% { left: -300%; }
+}
+
+#slider { overflow: hidden; }
+#slider figure img { width: 20%; float: left; }
+#slider figure {
+  position: fixed;
+  z-index: -1;
+  width: 500%;
+  height: auto;
+  margin-top: 90px;
+  left: 0;
+  animation: 12s slidy infinite;
+}
+
+#slider_m { overflow: hidden; }
+#slider_m figure img { width: 20%; float: left; }
+#slider_m figure {
+  position: fixed;
+  z-index: -1;
+  width: 500%;
+  height: auto;
+  margin-top: 80px;
+  left: 0;
+  animation: 12s slidy infinite;
+}
+
 /* header */
 .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height:40rem;
     margin-top: 0rem;
 }
 
+@media screen and (min-width: 681px) and (max-width: 880px) {
+  .flex {
+      height:30rem;
+  }
+  .intro span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .flex {
+      height:25rem;
+  }
+}
+
 .intro {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .intro span {
@@ -344,16 +397,38 @@ header img {
   color: white;
 }
 
-.main1 {
-  height: 50rem;
-  background-image: url("../images/bg_1.jpg");
-  margin-top: 0rem;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (max-width: 780px) {
+  .main2 {
+    background-attachment: initial;
+  }
+  .main3 {
+    background-attachment: initial;
+  }
+  .intro span {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  #slider_m {
+    display: inline;
+  }
+  #slider {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #slider {
+    display: inline;
+  }
+  #slider_m {
+    display: none;
+  }
+}
+
+
+/* artists */
 .main2 {
   margin-top: 0rem;
   height: 30rem;
@@ -374,25 +449,12 @@ header img {
   background-size: cover;
 }
 
-@media screen and (max-width: 780px) {
-  .main1 {
-    background-attachment: initial;
-  }
+.bgwrapper {
+  background-color: #f7f7f7;
+  padding-top: 2rem;
+  z-index: 1;
 }
 
-@media screen and (max-width: 780px) {
-  .main2 {
-    background-attachment: initial;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .main3 {
-    background-attachment: initial;
-  }
-}
-
-/* artists */
 .contentflex {
   display: flex;
   justify-content: center;
