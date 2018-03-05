@@ -449,9 +449,12 @@ header img {
 }
 
 .bgwrapper {
-  background-color: #f7f7f7;
   padding-top: 2rem;
+  background-color: #f7f7f7;
+  border: 2rem solid #f7f7f7;
+  outline: 2rem solid #f7f7f7;
   z-index: 1;
+
 }
 
 .contentflex {
