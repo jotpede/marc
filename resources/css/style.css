@@ -6,9 +6,13 @@ html {
 
 body {
   line-height: 1.4;
-  background-color: #f7f7f7;
+  background-color: #efedea;
   text-align: center;
   height: 100%;
+}
+
+p {
+  color: #071a5a;
 }
 
 h1 {
@@ -18,6 +22,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
+  color: #e11111;
   margin: 0 0 5rem 2rem;
 }
 
@@ -38,10 +43,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.4;
   font-weight: bold;
-  color: white;
+  color: #071a5a;
   margin-bottom: 1rem;
   padding: 0 1rem;
   font-family: 'Lobster', cursive;
@@ -59,10 +64,11 @@ h3 {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;
-  color: white;
+  color: #e11111;
   margin-bottom: 2rem;
-  border-bottom: 6px solid white;
+  border-bottom: 6px solid #e11111;
 }
+
 
 @media screen and (max-width: 768px) {
   h3 {
@@ -75,7 +81,7 @@ h3 {
 @media screen and (max-width: 480px) {
   h3 {
     font-size: 1.5rem;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid #e11111;
 
   }
 }
@@ -83,11 +89,11 @@ h3 {
 /* navi */
 a:hover, a:active {
   outline: 0;
-  color: orangered;
+  color: #e11111;
 }
 
 a {
-  color: #111;
+  color: #071a5a;
   transition: color 0.55s ease;
 }
 
@@ -265,7 +271,7 @@ header img {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  color: orangered;
+  color: #e11111;
 }
 
 
@@ -280,7 +286,7 @@ header img {
 }
 
 .nav-collapse ul ul a {
-  background: #111;
+  background: #071a5a;
   padding-left: 2em;
 }
 
@@ -310,7 +316,7 @@ header img {
 }
 
 .nav-toggle:before {
-  color: #111; /* Edit this to change the icon color */
+  color: #071a5a; /* Edit this to change the icon color */
   font: normal 50px/50px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
@@ -377,9 +383,6 @@ header img {
 @media screen and (min-width: 681px) and (max-width: 880px) {
   .flex {
       height:30rem;
-  }
-  .intro span {
-    display: none;
   }
 }
 
@@ -451,7 +454,7 @@ header img {
 
 .bgwrapper {
   padding-top: 2rem;
-  background-color: #f7f7f7;
+  background-color: #efedea;
   z-index: 1;
 
 }
@@ -466,7 +469,7 @@ header img {
   width: 95%;
   display: block;
   background-color: white;
-  border: 2px dashed #111;
+  border: 2px dashed #071a5a;
   outline: 8px solid white;
   z-index: 2;
 }
@@ -495,7 +498,7 @@ header img {
   font-size: 6rem;
   line-height: 1.4;
   font-weight: bold;
-  color: #111;
+  color: #071a5a;
   text-align: center;
   font-family: 'Lobster', cursive;
   margin-top: 2rem;
@@ -528,7 +531,7 @@ header img {
     right: 0px;
     margin: 4rem 0 0 0;
     z-index: 1;
-    height: 27rem;
+    height: 30rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -556,6 +559,7 @@ header img {
 .setlist {
   font-style: italic;
   text-align: left;
+  color: #071a5a;
   margin: 2rem 0rem 3rem 0rem;
   padding-left: 4rem;
 }
@@ -575,7 +579,7 @@ header img {
   font-size: 6rem;
   line-height: 1.4;
   font-weight: bold;
-  color: #111;
+  color: #071a5a;
   border: none;
   margin-bottom: 0.5rem;
   font-family: 'Lobster', cursive;
@@ -611,7 +615,7 @@ header img {
 }
 
 .gigs{
-  height: 50rem;
+  height: 40rem;
   background: url("../images/bg_1.jpg");
   background-attachment: fixed;
   background-position: top;
@@ -643,6 +647,7 @@ header img {
   border: none;
   font-size: 10rem;
   margin-bottom: 2rem;
+  color: #071a5a;
 }
 
 @media screen and (max-width: 780px) {
@@ -663,10 +668,10 @@ header img {
 
 .giglist ul li {
     display: block;
+    color: #071a5a;
 }
 
 .giglist li {
-  color: white;
   line-height: 1.8;
   list-style-type: none;
   font-size: 1.4rem;
@@ -674,7 +679,6 @@ header img {
 
 @media screen and (max-width: 480px) {
   .giglist li {
-    color: white;
     line-height: 1.8;
     list-style-type: none;
     font-size: 1rem;
@@ -701,7 +705,7 @@ header img {
   font-size: 6rem;
   line-height: 1.4;
   font-weight: bold;
-  color: #111;
+  color: #071a5a;
   border: none;
   text-align: left;
   margin-bottom: 0.5rem;
@@ -772,17 +776,17 @@ header img {
 }
 
 .textflex a {
-  color: OrangeRed;
+  color: #e11111;
 }
 
 .textflex a:hover{
-    color: #111;
+    color: #071a5a;
 }
 
 /* footer */
 
 footer {
-    background-color: #111;
+    background-color: #e11111;
     width: 100%;
     left: 0
     height:auto;
@@ -808,6 +812,7 @@ footer {
 .last a {
   display: block;
   color: white;
+  opacity: 0.8;
   font-size: 0.8rem;
   margin-left: 4rem;
   text-decoration: none;
@@ -820,5 +825,6 @@ footer {
 }
 
 a:hover {
-    color: OrangeRed;
+    color: white;
+    opacity: 1;
 }
